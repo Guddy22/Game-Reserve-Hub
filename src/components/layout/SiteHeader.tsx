@@ -55,7 +55,7 @@ export default function SiteHeader({ currentPath }: SiteHeaderProps) {
             />
           </button>
 
-          <a href={hrefTo('/')} className="font-display text-lg font-semibold tracking-tight text-neutral-900">
+          <a href={hrefTo('/')} className="font-sans text-lg font-semibold tracking-tight text-neutral-900">
             Game Reserve Hub
           </a>
         </div>
