@@ -1,3 +1,17 @@
+import imgLiveSinger from '@/components/assets/IMG_3740.png';
+import imgStudioCollab from '@/components/assets/IMG_3753.png';
+import imgDesignerWork from '@/components/assets/IMG_3754.png';
+import imgTeamTablet from '@/components/assets/IMG_3763.png';
+import imgVideoShoot from '@/components/assets/IMG_3767.png';
+import imgTeamPaperwork from '@/components/assets/IMG_3770.png';
+import imgMerchPackaging from '@/components/assets/IMG_3772.png';
+import imgCreativeGroup from '@/components/assets/IMG_3774.png';
+import imgPhotoStudioShoot from '@/components/assets/IMG_3744.png';
+import imgDanceVideo from '@/components/assets/IMG_3745.png';
+import imgBeachDrummer from '@/components/assets/IMG_3747.png';
+import imgAnimationDesign from '@/components/assets/IMG_3736.png';
+import imgTeamPrintReview from '@/components/assets/IMG_3737.png';
+
 export const NAV_LINKS = [
   { label: 'About', path: '/about' },
   { label: 'News', path: '/news' },
@@ -44,9 +58,8 @@ export const DIRECTORIES: DirectoryConfig[] = [
     eyebrow: 'Artists',
     intro:
       'Discover musicians and performers, explore their work and find the collaborators, services and bookings they need to grow.',
-    heroImage:
-      'https://images.pexels.com/photos/7715347/pexels-photo-7715347.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroAlt: 'Musician performing on stage under coloured lights',
+    heroImage: imgLiveSinger,
+    heroAlt: 'Singer performing live on stage with band',
     serviceNoun: 'artist',
     services: [
       { title: 'Artist packages', description: 'Bundled releases, visuals and promotion with clearly scoped deliverables.' },
@@ -61,8 +74,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Afro-soul vocalist and songwriter',
         services: ['Live performance', 'Songwriting', 'Artist packages'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/8186275/pexels-photo-8186275.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgLiveSinger,
         tags: ['Afrobeats', 'Soul', 'Live'],
       },
       {
@@ -72,8 +84,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Indie guitarist with a cinematic live set',
         services: ['Session guitar', 'Live performance'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/8044204/pexels-photo-8044204.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgStudioCollab,
         tags: ['Indie', 'Rock', 'Session'],
       },
       {
@@ -83,8 +94,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Highlife-inspired acoustic performer',
         services: ['Acoustic sets', 'Event bookings'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/7715347/pexels-photo-7715347.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgBeachDrummer,
         tags: ['Highlife', 'Acoustic'],
       },
     ],
@@ -96,9 +106,8 @@ export const DIRECTORIES: DirectoryConfig[] = [
     eyebrow: 'Producers and engineers',
     intro:
       'Find beats, production, recording, mixing and mastering support from engineers who know how to make a track land.',
-    heroImage:
-      'https://images.pexels.com/photos/36936571/pexels-photo-36936571.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroAlt: 'Close-up of a professional audio mixing console',
+    heroImage: imgStudioCollab,
+    heroAlt: 'Musicians and producers recording together in a professional studio setup',
     serviceNoun: 'producer',
     services: [
       { title: 'Beats and licensing', description: 'Browse ready-made beats and buy licences that suit your release.' },
@@ -114,8 +123,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Hybrid beatmaker and mix engineer',
         services: ['Beats', 'Mixing', 'Mastering'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/32215665/pexels-photo-32215665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgTeamTablet,
         tags: ['Beats', 'Mixing'],
       },
       {
@@ -125,8 +133,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Recording and mastering engineer',
         services: ['Recording', 'Mastering'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/39332198/pexels-photo-39332198.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgStudioCollab,
         tags: ['Recording', 'Mastering'],
       },
     ],
@@ -138,9 +145,8 @@ export const DIRECTORIES: DirectoryConfig[] = [
     eyebrow: 'Graphic designers',
     intro:
       'Explore portfolios and request visual design for album covers, brand identities, posters, merchandise and digital campaigns.',
-    heroImage:
-      'https://images.pexels.com/photos/7675029/pexels-photo-7675029.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroAlt: 'Designers collaborating on a creative project at a desktop',
+    heroImage: imgAnimationDesign,
+    heroAlt: 'Graphic designers collaborating on digital tablet artwork and 3D character design',
     serviceNoun: 'designer',
     services: [
       { title: 'Album and single artwork', description: 'Cover art built around your sound and story.' },
@@ -155,8 +161,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Cover art and brand identity for independent artists',
         services: ['Album artwork', 'Brand identity'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/13451104/pexels-photo-13451104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgDesignerWork,
         tags: ['Cover art', 'Branding'],
       },
       {
@@ -166,8 +171,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Poster and merchandise designer',
         services: ['Posters', 'Merchandise'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/7675031/pexels-photo-7675031.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgTeamPrintReview,
         tags: ['Posters', 'Print'],
       },
     ],
@@ -179,9 +183,8 @@ export const DIRECTORIES: DirectoryConfig[] = [
     eyebrow: 'Photo and video',
     intro:
       'Find visual storytellers for portraits, press shoots, music videos and event coverage, and book clearly scoped projects.',
-    heroImage:
-      'https://images.pexels.com/photos/16135656/pexels-photo-16135656.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroAlt: 'Photographer aiming a camera in a studio',
+    heroImage: imgPhotoStudioShoot,
+    heroAlt: 'Photographer and videographer setting up lighting and gimbal for model shoot in studio',
     serviceNoun: 'creative',
     services: [
       { title: 'Portrait and press shoots', description: 'Studio and location sessions for artists and brands.' },
@@ -196,8 +199,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Portrait and press photographer',
         services: ['Portraits', 'Press shoots'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/36697247/pexels-photo-36697247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgPhotoStudioShoot,
         tags: ['Portrait', 'Studio'],
       },
       {
@@ -207,9 +209,18 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Music video director and cinematographer',
         services: ['Music videos', 'Editing'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/6621440/pexels-photo-6621440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgVideoShoot,
         tags: ['Video', 'Cinematography'],
+      },
+      {
+        id: 'video-2',
+        name: 'Ama Serwaa',
+        location: 'Accra, Ghana',
+        headline: 'Social & promo content creator',
+        services: ['Reels', 'Dance Videos'],
+        startingFrom: 'Rates confirmed per offer',
+        image: imgDanceVideo,
+        tags: ['Dance', 'Content'],
       },
     ],
   },
@@ -220,9 +231,8 @@ export const DIRECTORIES: DirectoryConfig[] = [
     eyebrow: 'DJs',
     intro:
       'Discover DJs, listen to their mixes and find suitable booking opportunities for clubs, weddings, launches and festivals.',
-    heroImage:
-      'https://images.pexels.com/photos/9005458/pexels-photo-9005458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    heroAlt: 'DJ mixing live in a nightclub with coloured lights',
+    heroImage: imgCreativeGroup,
+    heroAlt: 'Creative group hanging out together',
     serviceNoun: 'DJ',
     services: [
       { title: 'Club nights', description: 'Resident and guest sets for venues and promoters.' },
@@ -237,8 +247,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Amapiano and afrohouse selector',
         services: ['Club nights', 'Private events'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/40614690/pexels-photo-40614690.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgCreativeGroup,
         tags: ['Amapiano', 'Afrohouse'],
       },
       {
@@ -248,8 +257,7 @@ export const DIRECTORIES: DirectoryConfig[] = [
         headline: 'Deep house and techno resident',
         services: ['Club nights', 'Festival slots'],
         startingFrom: 'Rates confirmed per offer',
-        image:
-          'https://images.pexels.com/photos/9005483/pexels-photo-9005483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+        image: imgTeamTablet,
         tags: ['Deep house', 'Techno'],
       },
     ],
@@ -264,7 +272,7 @@ export interface Product {
   id: string;
   name: string;
   category: ProductCategory;
-  price: number;
+  price: string;
   summary: string;
   image: string;
   badge?: string;
@@ -275,75 +283,67 @@ export const PRODUCTS: Product[] = [
     id: 'beat-midnight-drive',
     name: 'Midnight Drive beat licence',
     category: 'Beats',
-    price: 35,
+    price: 'GH₵ 350',
     summary: 'Moody trap-soul instrumental with stems available for the Premium licence.',
-    image:
-      'https://images.pexels.com/photos/36936571/pexels-photo-36936571.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgTeamTablet,
     badge: 'Bestseller',
   },
   {
     id: 'pkg-launch',
     name: 'Single launch package',
     category: 'Artist packages',
-    price: 480,
+    price: 'GH₵ 4,800',
     summary: 'Mix, master, cover artwork and a short promo clip, delivered with a fixed timeline.',
-    image:
-      'https://images.pexels.com/photos/8044204/pexels-photo-8044204.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgStudioCollab,
   },
   {
     id: 'art-cover-set',
     name: 'Album cover artwork',
     category: 'Artwork',
-    price: 220,
+    price: 'GH₵ 2,200',
     summary: 'Original cover design with two revisions, print-ready and digital files.',
-    image:
-      'https://images.pexels.com/photos/13451104/pexels-photo-13451104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgDesignerWork,
   },
   {
     id: 'merch-tee',
     name: 'Reserve Signature tee',
     category: 'Merchandise',
-    price: 28,
+    price: 'GH₵ 280',
     summary: 'Heavyweight cotton tee with an original Game Reserve print by our in-house designers.',
-    image:
-      'https://images.pexels.com/photos/6131925/pexels-photo-6131925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgMerchPackaging,
     badge: 'New',
   },
   {
     id: 'digital-sample-pack',
     name: 'Afro percussion sample pack',
     category: 'Digital',
-    price: 42,
+    price: 'GH₵ 420',
     summary: 'Over 300 royalty-free percussion one-shots and loops recorded in a live studio.',
-    image:
-      'https://images.pexels.com/photos/6862364/pexels-photo-6862364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgBeachDrummer,
   },
   {
     id: 'beat-golden-hour',
     name: 'Golden Hour beat licence',
     category: 'Beats',
-    price: 50,
+    price: 'GH₵ 500',
     summary: 'Uplifting Afrobeats instrumental with a full stem pack for commercial releases.',
-    image:
-      'https://images.pexels.com/photos/32215665/pexels-photo-32215665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgStudioCollab,
   },
   {
     id: 'pkg-video',
     name: 'Music video package',
     category: 'Artist packages',
-    price: 1200,
+    price: 'GH₵ 12,000',
     summary: 'Concept development, a one-day shoot, edit and colour grade, with agreed deliverables.',
-    image:
-      'https://images.pexels.com/photos/6621440/pexels-photo-6621440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgVideoShoot,
   },
   {
     id: 'digital-presets',
     name: 'Photo colour presets',
     category: 'Digital',
-    price: 18,
+    price: 'GH₵ 180',
     summary: 'A set of colour grading presets built from our photographers’ live shoots.',
-    image:
-      'https://images.pexels.com/photos/16135656/pexels-photo-16135656.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgPhotoStudioShoot,
   },
 ];
 
@@ -365,8 +365,7 @@ export const ARTICLES: Article[] = [
     excerpt: 'A conversation about balance, space and the small decisions that make a track feel finished.',
     date: 'October 2026',
     readTime: '6 min read',
-    image:
-      'https://images.pexels.com/photos/39332198/pexels-photo-39332198.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgStudioCollab,
   },
   {
     id: 'a-2',
@@ -375,8 +374,7 @@ export const ARTICLES: Article[] = [
     excerpt: 'Know the difference between leases, exclusive rights and stems before you publish your song.',
     date: 'October 2026',
     readTime: '4 min read',
-    image:
-      'https://images.pexels.com/photos/36936571/pexels-photo-36936571.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgTeamTablet,
   },
   {
     id: 'a-3',
@@ -385,8 +383,7 @@ export const ARTICLES: Article[] = [
     excerpt: 'Our local representatives are onboarding engineers, designers and performers for new regional projects.',
     date: 'October 2026',
     readTime: '3 min read',
-    image:
-      'https://images.pexels.com/photos/39190569/pexels-photo-39190569.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgCreativeGroup,
   },
   {
     id: 'a-4',
@@ -395,8 +392,7 @@ export const ARTICLES: Article[] = [
     excerpt: 'How one DJ turned mixes shared online into club nights and festival slots.',
     date: 'September 2026',
     readTime: '5 min read',
-    image:
-      'https://images.pexels.com/photos/9005458/pexels-photo-9005458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgTeamPaperwork,
   },
   {
     id: 'a-5',
@@ -405,8 +401,7 @@ export const ARTICLES: Article[] = [
     excerpt: 'A simple checklist for briefing photographers and videographers clearly.',
     date: 'September 2026',
     readTime: '4 min read',
-    image:
-      'https://images.pexels.com/photos/36697538/pexels-photo-36697538.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgPhotoStudioShoot,
   },
   {
     id: 'a-6',
@@ -415,8 +410,7 @@ export const ARTICLES: Article[] = [
     excerpt: 'Late-night soul, Accra street sounds, studio-ready afrobeats and more, picked by our team.',
     date: 'October 2026',
     readTime: '2 min listen',
-    image:
-      'https://images.pexels.com/photos/6131925/pexels-photo-6131925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: imgBeachDrummer,
   },
 ];
 

@@ -25,7 +25,7 @@ export default function DirectoryPage({ config }: DirectoryPageProps) {
   );
 
   return (
-    <>
+    <div className="font-['Neue_Haas_Grotesk_Text','Helvetica_Neue',Helvetica,Arial,sans-serif] antialiased tracking-tight">
       <PageHero
         eyebrow={config.eyebrow}
         title={config.title}
@@ -50,7 +50,7 @@ export default function DirectoryPage({ config }: DirectoryPageProps) {
                 key={service.title}
                 className="rounded-2xl border border-neutral-200 bg-neutral-50 p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
               >
-                <h3 className="font-display text-xl font-semibold text-neutral-950">{service.title}</h3>
+                <h3 className="text-xl font-semibold text-neutral-950">{service.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">{service.description}</p>
               </div>
             ))}
@@ -89,7 +89,7 @@ export default function DirectoryPage({ config }: DirectoryPageProps) {
                       />
                     </div>
                     <div className="flex flex-1 flex-col p-6">
-                      <h3 className="font-display text-xl font-semibold text-neutral-950">{creative.name}</h3>
+                      <h3 className="text-xl font-semibold text-neutral-950">{creative.name}</h3>
                       <p className="mt-1 flex items-center gap-1.5 text-sm text-neutral-600">
                         <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                         {creative.location}
@@ -119,7 +119,7 @@ export default function DirectoryPage({ config }: DirectoryPageProps) {
             </ul>
           ) : (
             <div className="mt-12 rounded-2xl border border-dashed border-neutral-300 bg-white p-12 text-center">
-              <p className="font-display text-xl font-semibold text-neutral-900">No matches for "{query.trim()}"</p>
+              <p className="text-xl font-semibold text-neutral-900">No matches for "{query.trim()}"</p>
               <p className="mt-2 text-sm text-neutral-600">Try another skill or genre, or submit a brief and we will find someone.</p>
               <button
                 type="button"
@@ -132,6 +132,6 @@ export default function DirectoryPage({ config }: DirectoryPageProps) {
           )}
         </div>
       </section>
-    </>
+    </div>
   );
 }

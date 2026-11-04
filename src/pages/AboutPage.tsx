@@ -1,7 +1,8 @@
 import { Compass, Crown, Megaphone, Mic2, Newspaper, UserRound } from 'lucide-react';
 import { PageHero, SectionHeading } from '@/components/ui/PageSections';
 import { hrefTo } from '@/lib/router';
-import musicMeetImage from '@/components/assets/musicmeet.jpg';
+import musicMeetImage from '@/components/assets/IMG_3765.png';
+import whyChooseImage from '@/components/assets/IMG_3772.png';
 
 const TEAM = [
   {
@@ -48,8 +49,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Game Reserve Hub"
-        title="A connected creative economy, built by creatives"
-        description="We connect musicians, producers, engineers, designers, photographers, videographers and DJs with each other and with paying customers, making quality creative work easier to access and more affordable."
+        title="Where creatives connect and grow."
+        description="Based in Ghana and building connections worldwide, Game Reserve Hub brings creative talent, services and original work together. Find collaborators, access affordable services, and reach customers who value what you create."
         image={musicMeetImage}
         imageAlt="Creatives collaborating and connecting"
       />
@@ -58,28 +59,75 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
           <div className="rounded-3xl bg-neutral-50 p-8 lg:p-12">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-800">Our mission</p>
+            <h2>Make creative connections count.</h2>
             <p className="mt-4 text-2xl font-semibold leading-snug tracking-tight text-neutral-950 sm:text-3xl">
-              To connect creatives with one another and with paying customers, making quality creative services and
-              original work easier to access and more affordable.
+              Connect creatives with collaborators and paying customers, making quality services and original work easier to find, access, and afford.
             </p>
           </div>
           <div className="rounded-3xl bg-neutral-950 p-8 text-white lg:p-12">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-400">Our vision</p>
-            <p className="mt-4 text-2xl font-semibold leading-snug tracking-tight sm:text-3xl">
-              A connected creative economy where talent supports talent, original work reaches wider audiences, and more
-              creatives build sustainable careers.
-            </p>
+            <div className="mt-4 text-2xl font-semibold leading-snug tracking-tight sm:text-3xl">
+              <p>A world where talent supports talent.</p>
+              <p className="mt-2 text-lg font-normal text-neutral-300 sm:text-xl">
+                A connected creative economy where original work reaches wider audiences and more creatives build sustainable careers.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-neutral-50 py-20 lg:py-28 font-sans">
+      {/* Increased height section & crisp image styling */}
+      <section className="bg-neutral-50 py-24 lg:py-32 font-sans">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading
-            eyebrow="Why people choose us"
-            title="Discovery, trusted connections and shopping in one place"
-            description="Through negotiated partner rates, clearly scoped packages and shared production opportunities, we aim to offer better value than buying equivalent services separately. Savings are confirmed for each offer, with fair partner payment and clear deliverables."
-          />
+          <div className="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-2 lg:gap-16">
+            <div className="flex flex-col justify-center">
+              <SectionHeading
+                eyebrow="Why choose game reserve hub"
+                title="The right connections. More possibilities."
+                description="Find the people, services, and support to move your next project forward."
+              />
+              
+              <div className="mt-8 space-y-6 text-neutral-700">
+                <div>
+                  <h3 className="text-lg font-semibold text-neutral-950">Find your creative match</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+                    Explore portfolios across music, design, animation, photography, video, and more, all in one place.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-semibold text-neutral-950">Make your budget go further</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+                    Access negotiated partner rates and coordinated packages, with pricing and any savings explained for each offer.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-semibold text-neutral-950">Know what you’re buying</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+                    Understand the scope, timeline, price, and deliverables before your project begins.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-semibold text-neutral-950">Give your work more visibility</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-600">
+                    Showcase your craft and connect with fellow creatives, fans, brands, and potential customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Viewport container height boosted to 550px mobile / 750px desktop with crisp rendering */}
+            <div className="relative flex min-h-[550px] w-full items-center justify-center overflow-hidden rounded-3xl bg-neutral-900 shadow-xl lg:min-h-[750px]">
+              <img
+                src={whyChooseImage}
+                alt="Why Choose Game Reserve Hub"
+                className="h-full w-full object-cover object-center contrast-[1.03] saturate-[1.05] filter [image-rendering:crisp-edges]"
+                loading="eager"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -87,8 +135,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
             eyebrow="How we earn"
-            title="Transparent income that rewards the whole community"
-            description="We earn when customers purchase services, artist packages, beats, merchandise, artwork or other approved products. Discovery and participation never require a launch membership fee."
+            title="Built around creative work."
+            description="We earn when customers book services or buy products through Game Reserve Hub. Pricing and any applicable fees are explained before you commit."
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {EARNINGS.map((item, index) => (

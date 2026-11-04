@@ -28,12 +28,22 @@ export default function ShopPage() {
   const [category, setCategory] = useState<CategoryFilter>('All');
 
   const visibleProducts = useMemo(
-    () => (category === 'All' ? PRODUCTS : PRODUCTS.filter((product) => product.category === category)),
+    () => {
+      const filtered = category === 'All' ? PRODUCTS : PRODUCTS.filter((product) => product.category === category);
+      
+      // Convert dollar signs ($) to Ghana Cedi (GH₵) across all visible products
+      return filtered.map((product) => ({
+        ...product,
+        price: typeof product.price === 'string' 
+          ? product.price.replace(/\$/g, 'GH₵ ') 
+          : product.price,
+      }));
+    },
     [category],
   );
 
   return (
-    <>
+    <div className="font-['Neue_Haas_Grotesk_Text','Helvetica_Neue',Helvetica,Arial,sans-serif] antialiased tracking-tight">
       <PageHero
         eyebrow="Shop"
         title="Buy beats, merchandise, artwork and artist packages"
@@ -82,15 +92,15 @@ export default function ShopPage() {
               <li key={step.title} className="rounded-2xl border border-neutral-200 p-8">
                 <div className="flex items-center justify-between">
                   <step.icon className="h-6 w-6 text-primary-700" aria-hidden="true" />
-                  <span className="font-display text-3xl font-semibold text-neutral-300">0{index + 1}</span>
+                  <span className="text-3xl font-semibold text-neutral-300">0{index + 1}</span>
                 </div>
-                <h3 className="mt-6 font-display text-xl font-semibold text-neutral-950">{step.title}</h3>
+                <h3 className="mt-6 text-xl font-semibold text-neutral-950">{step.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">{step.description}</p>
               </li>
             ))}
           </ol>
         </div>
       </section>
-    </>
+    </div>
   );
 }

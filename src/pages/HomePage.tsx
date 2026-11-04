@@ -4,6 +4,7 @@ import ProductCard from '@/components/shop/ProductCard';
 import { SectionHeading } from '@/components/ui/PageSections';
 import { ARTICLES, DIRECTORIES, PRODUCTS } from '@/data/site';
 import { hrefTo } from '@/lib/router';
+import heroBackground from '@/components/assets/IMG_3736.png';
 
 const PILLARS = [
   {
@@ -53,38 +54,48 @@ export default function HomePage() {
 
   return (
     <div className="font-sans">
+      {/* Hero Section */}
       <section className="relative isolate overflow-hidden bg-neutral-950 text-white">
+        {/* Background Image - Brightened to 75% opacity */}
         <img
-          src="https://stockcake.com/i/open-air-jam-session_438416_213021"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-35"
+          src={heroBackground}
+          alt="Game Reserve Hub Hero"
+          className="absolute inset-0 -z-10 h-full w-full object-cover object-center opacity-75"
           loading="eager"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/40 via-neutral-950/60 to-neutral-950" />
+        
+        {/* Left-to-right directional gradient to keep text legible while leaving image subject clear */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-neutral-950 via-neutral-950/70 to-neutral-950/20" />
+        
+        {/* Bottom smooth shadow transition */}
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-neutral-950 to-transparent" />
+
         <div className="mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-5 pt-28 pb-24 lg:px-8">
           <p className="animate-fade-up text-sm font-semibold uppercase tracking-[0.25em] text-primary-400">
             Game Reserve Hub
           </p>
-          <h1 className="animate-fade-up mt-5 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl [animation-delay:100ms]">
+          <h2 className="animate-fade-up mt-5 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl [animation-delay:100ms]">
             Connect. Create. <span className="text-primary-400">Sell.</span>
-          </h1>
+          </h2>
           <p className="animate-fade-up mt-6 max-w-2xl text-lg leading-relaxed text-neutral-200 sm:text-xl [animation-delay:200ms]">
             Easy, affordable access to creative talent, services and original work. We help creatives find each other,
             buy what they need and sell their work to the wider public.
           </p>
           <div className="animate-fade-up mt-10 flex flex-col gap-3 sm:flex-row [animation-delay:300ms]">
-            <a
-              href={hrefTo('/contact', { type: 'brief' })}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary-500 px-7 py-3.5 text-base font-semibold text-neutral-950 transition-all duration-200 hover:bg-primary-400 hover:shadow-lg tracking-tight"
-            >
-              Submit a brief
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </a>
+            
             <a
               href={hrefTo('/artists')}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-base font-semibold text-white transition-colors hover:bg-white hover:text-neutral-950 tracking-tight"
             >
-              Discover creatives
+              Explore creatives <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+
+            <a
+              href={hrefTo('/contact', { type: 'brief' })}
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary-500 px-7 py-3.5 text-base font-semibold text-neutral-950 transition-all duration-200 hover:bg-primary-400 hover:shadow-lg tracking-tight"
+            >
+              Apply to join
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
           </div>
           <dl className="animate-fade-up mt-16 grid max-w-3xl grid-cols-2 gap-8 border-t border-white/15 pt-8 sm:grid-cols-4 [animation-delay:400ms]">
@@ -104,6 +115,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Who We Serve Section */}
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
@@ -131,6 +143,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Directory Grid Section */}
       <section className="bg-neutral-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -180,6 +193,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Pillars Section */}
       <section className="bg-neutral-950 py-20 text-white lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeading
@@ -199,6 +213,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Featured Shop Section */}
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -216,6 +231,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Latest News Section */}
       <section className="bg-neutral-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -233,6 +249,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Call To Action Card */}
       <section className="px-5 pb-20 lg:px-8 lg:pb-28">
         <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-primary-500 px-8 py-16 text-neutral-950 sm:px-16">
           <div className="max-w-2xl">

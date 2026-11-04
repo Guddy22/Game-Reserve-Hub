@@ -16,12 +16,12 @@ export default function NewsPage() {
   );
 
   return (
-    <>
+    <div className="font-['Neue_Haas_Grotesk_Text','Helvetica_Neue',Helvetica,Arial,sans-serif] antialiased tracking-tight">
       <PageHero
         eyebrow="News and articles"
         title="Creative news, honest interviews and useful guides"
         description="Read the stories behind the work, learn how to buy and book creative services, and discover playlists picked by our curators."
-        image="https://images.pexels.com/photos/6131925/pexels-photo-6131925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        image="https://images.pexels.com/photos/6862364/pexels-photo-6862364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
         imageAlt="A vintage record shop with rows of vinyl"
       />
 
@@ -80,7 +80,7 @@ export default function NewsPage() {
                   <Headphones className="h-6 w-6" aria-hidden="true" />
                 </span>
                 <div>
-                  <h3 className="font-display text-lg font-semibold">{playlist.title}</h3>
+                  <h3 className="text-lg font-semibold">{playlist.title}</h3>
                   <p className="mt-1 text-sm text-neutral-300">{playlist.mood}</p>
                   <p className="mt-3 text-xs font-medium uppercase tracking-wider text-neutral-400">
                     {playlist.tracks} tracks · {playlist.curator}
@@ -91,6 +91,6 @@ export default function NewsPage() {
           </ul>
         </div>
       </section>
-    </>
+    </div>
   );
 }
