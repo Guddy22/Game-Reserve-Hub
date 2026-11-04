@@ -6,13 +6,20 @@ interface ProductCardProps {
   product: Product;
 }
 
-export function formatPrice(amount: number): string {
-  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(amount);
+export function formatPrice(price: number | string): string {
+  if (typeof price === 'string') {
+    return price.includes('GH₵') ? price : `GH₵ ${price.replace(/\$/g, '').trim()}`;
+  }
+  return new Intl.NumberFormat('en-GH', {
+    style: 'currency',
+    currency: 'GHS',
+    maximumFractionDigits: 0,
+  }).format(price);
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl font-sans">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white font-sans transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative aspect-[4/3] overflow-hidden bg-neutral-200">
         <img
           src={product.image}
@@ -21,7 +28,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         {product.badge && (
-          <span className="absolute left-4 top-4 rounded-full bg-neutral-950 px-3 py-1 text-xs font-semibold text-white tracking-tight">
+          <span className="absolute left-4 top-4 rounded-full bg-neutral-950 px-3 py-1 text-xs font-semibold tracking-tight text-white">
             {product.badge}
           </span>
         )}
@@ -37,10 +44,10 @@ export default function ProductCard({ product }: ProductCardProps) {
           </p>
           <a
             href={hrefTo('/contact', { type: 'enquiry', product: product.name })}
-            className="inline-flex items-center gap-1.5 rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-600 tracking-tight"
+            className="inline-flex items-center gap-1.5 rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium tracking-tight text-white transition-colors hover:bg-primary-600"
           >
             Enquire
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
           </a>
         </div>
       </div>
